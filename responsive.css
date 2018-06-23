@@ -1,0 +1,144 @@
+@media screen and (max-width: 354px) {
+  header img {
+    width: 45px;
+    height: 45px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h2 {
+    font-size: .8rem;
+  }
+
+  #me {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 355px) and (max-width: 450px) {
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h2 {
+    font-size: .9rem;
+  }
+
+  #me {
+    width: 75%;
+    margin: auto;
+  }
+
+  #banner h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 540px) {
+  #banner h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 639px) {
+  #banner h1 {
+    font-size: 2.9rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 999px) {
+  header img {
+    width: 80px;
+    height: 80px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
+
+  .content h2 {
+    font-size: 2.2rem;
+  }
+
+  .caption {
+    font-size: 1.1rem;
+  }
+
+  #banner {
+    padding-top: .5rem;
+  }
+
+  #menu-bars {
+    font-size: 3.2rem;
+    left: 88%;
+  }
+
+  #menu {
+    left: 70%;
+    width: 25%;
+  }
+
+  #menu li {
+    border: 2px solid #F9EBEA;
+  }
+
+  #menu a {
+    font-size: 1.7rem;
+  }
+
+  #banner h1 {
+    font-size: 3rem;
+    top: 40%;
+    left: 44%;
+  }
+
+  #more-about {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    width: 999px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .caption {
+    font-size: 1.1rem; 
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header h1 {
+    font-size: 3.4rem;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+  }
+
+  #menu-bars {
+    font-size: 3rem;
+  }
+
+  #banner h1 {
+    margin-top: 3rem;
+    font-size: 4.6rem;
+  }
+}

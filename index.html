@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alyson Turley-- Web Developer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700|Raleway:200,400|Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <div id='logo'>
+        <img src="./images/logo-a.ico" alt="Logo with A and T in a circle">
+      </div>
+      <div id='headline'>
+        <h1>Alyson Turley</h1>
+        <h2>Front-End Developer & Designer</h2>
+      </div>
+    </header>
+    <div id='banner' class='container'>
+      <img src='./images/banner.jpg' alt='A photo of Alyson blowing out a candle on a donut.
+      Her hair looks great-- much better than in real life.'>
+      <span id='menu-bars'><i class="fas fa-bars"></i></span>
+      <div id='menu'>
+        <ul>
+          <a href='#about'><li>About</li></a>
+          <a href='#hero'><li>Projects</li></a>
+          <a href='#'><li>Contact</li></a>
+				</ul>
+      </div>
+      <h1> Hi, <br /> I'm Alyson. <br/> I make things <br />on the internet. </h1>
+    </div>
+    <section id='about' class='content'>
+      <h2>ABOUT ME</h2>
+      <div id='bio'>
+        <!--Add JS/JQ function to hide #bio, then show onClick of plus sign-->
+        <p class='caption'>
+          I am a Front-End Web Developer based in Austin, TX, working with HTML/CSS/JS and React
+          to create eye-catching and functional websites and web apps. <span class='expanded-bio'>My design and development
+          philosophy is guided by efficiency, intuition, and the user experience, with the goal
+          of creating positive digital space that is accessible to everyone.
+        </p></span>
+        <span class='expanded-bio'>
+        <p class='caption'>
+          When I'm not in front of a computer, I love to get outside to hike, swim, or run (when
+          my hamstring isn't acting up, anyway), and love sports (especially hockey and soccer).
+          I've worked with kids for over 10 years as a teacher, nanny, or soccer coach, and hope
+          to soon have a few kid-oriented development projects to share.
+        </p></span>
+      </div>
+      <a id='more-about'><p>+ read more</p></a>
+    </section>
+    <section id='hero' class='content work'>
+      <div id ='hero-box'>
+        <h2>FEATURED PROJECT: _jammming_</h2>
+        <a href='https://at-jammming.surge.sh' target='_blank'>
+          <img src='./images/jammming.jpg' alt='Screenshot of the jammming app, for creating new Spotify playlists.'>
+        </a>
+        <p class='caption' id='cap1'>A simple React app that interacts with the Spotify api to search for songs,
+          then create and save playlists to a user's Spotify account.
+        </p>
+      </div>
+    </section>
+
+    <section id='portfolio' class='content work'>
+      <div class='project'>
+        <img src='./images/quote-machine.jpg' alt='a screencap of the "Quote Machine"'>
+        <h2>Quote Generator  <a class='expand' id='ex2'>+</a></h2>
+        <p class='caption'id='cap2'>A Javascript site that generates a random inspirational quote from a
+          badass woman with every click.</p>
+      </div>
+      <div class='project'>
+        <img src='./images/weather.jpg' alt= 'A screencap of a weather conditions app'>
+        <h2>Weather App <a class='expand' id='ex3'>+</a></h2>
+        <p class='caption' id='cap3'>A simple weather reporter app that uses the Weather Underground api to
+          return conditions for a user's location.
+        </p>
+      </div>
+    </section>
+    <section id='contact' class='content'>
+      <h2>Contact: <span id='email'>alyson.turley@gmail.com</span></h2>
+      <div id='contact-icons'>
+        <span><a href='mailto:alyson.turley@gmail.com'><i class="far fa-envelope" aria-hidden="true"></i></a></span>
+        <span><a href='https://github.com/alysonalyson' target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></span>
+        <span><a href='https://twitter.com/alysonalyson' target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></span>
+      </div>
+    </section>
+    <footer>
+      <p class='caption'>&copy 2018 Alyson Turley</p>
+    </footer>
+    <script>
+        var main = function(){
+          $('#menu').hide();
+          $('#menu-bars').click(function(){
+            $('#menu').toggle();
+          });
+
+          $('.expanded-bio').hide();
+          $('#more-about').click(function(){
+            $('.expanded-bio').slideToggle();
+          });
+
+          $('#cap2').hide();
+          $('#ex2').click(function(){
+            $('#cap2').slideToggle();
+          });
+
+          $('#cap3').hide();
+          $('#ex3').click(function(){
+            $('#cap3').slideToggle();
+          });
+        };
+
+      $(document).ready(main);
+    </script>
+  </body>
+</html>

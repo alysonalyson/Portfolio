@@ -1,0 +1,224 @@
+/* CSS RESET */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F9EBEA;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  color: #273746;
+  padding-top: 1rem;
+}
+
+.content h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  color: #566573;
+}
+
+.caption {
+  font-family: Roboto, sans-serif;
+  font-size: .9rem;
+}
+
+/********   HEADER   ***********/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  border-bottom: 2px solid #1A237E;
+}
+
+header h1 {
+  font-weight: 200;
+}
+
+header h2 {
+  font-weight: 400;
+}
+
+#logo {
+  width: 20%;
+  padding-left: .5rem;
+}
+
+#headline {
+  text-align: right;
+  width: 80%;
+  padding-right: .7rem;
+}
+
+/************  BANNER  *************/
+#banner {
+  margin-top: 2px;
+  position: relative;
+  text-align: right;
+  color: #F9EBEA;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.1rem;
+}
+
+#banner h1 {
+  position: absolute;
+  top: 33%;
+  right: 5%;
+  text-align: right;
+  font-size: 1.8rem;
+}
+
+#banner img {
+  width: 100%;
+}
+
+#menu-bars {
+  color: #F9EBEA;
+  font-size: 2rem;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 10px;
+}
+
+#menu {
+  border: 1px solid #F9EBEA;
+  background-color: #1A237E;
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 62%;
+  text-align: right;
+  z-index: 5;
+}
+
+#menu li {
+  border: 1px solid #F9EBEA;
+  padding: 12px;
+}
+
+#menu a {
+  font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #F9EBEA;
+  text-decoration: none;
+}
+#menu a:hover {
+  color: #2196F3;
+}
+
+/************   ABOUT  *************/
+#about {
+  padding: 1rem .5rem;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  color: #566573;
+}
+
+#more-about {
+  text-align: left;
+  padding: 3px;
+  font-size: 1rem;
+}
+
+#bio {
+  font-size: .8rem;
+  width: 100%;
+  margin-top: .5rem;
+}
+
+/************   HERO  *************/
+#hero {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#hero-box {
+  width: 98%;
+  margin: auto;
+}
+/************   PORTFOLIO  *************/
+.project img {
+  width: 100%;
+}
+
+.project h2 {
+  padding-left: 2px;
+}
+
+.project .expand {
+  font-size: 2rem;
+}
+
+.project {
+  width: 100%;
+  padding-bottom: 2.5rem;
+}
+
+
+/************   CONTACT  *************/
+#contact {
+  align-items: center;
+  width: 100%;
+}
+
+#contact h2 {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#email {
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+#contact-icons {
+  text-align: center;
+  color: #880E4F;
+  font-size: 3rem;
+  width: 100%;
+  padding-top: 10px;
+}
+
+#contact a {
+  color: #880E4F;
+  padding: 10px;
+}
+
+#contact a:hover {
+  color: #2196F3;
+}
+
+/************   FOOTER  *************/
+footer {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: .85rem;
+  color: #566573;
+  margin: 1rem;
+}
