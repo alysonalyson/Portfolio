@@ -69,7 +69,7 @@
   }
 
   .content h2 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .caption {
@@ -107,6 +107,10 @@
   #more-about {
     font-size: 1.2rem;
   }
+
+  .project {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -117,7 +121,7 @@
   }
 
   .caption {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 
   header img {
@@ -134,11 +138,29 @@
   }
 
   #menu-bars {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
+
+  #menu {
+    left: 75%;
+    width: 20%;
+  }
+
+  #menu li {
+    border: 2px solid #F9EBEA;
+  }
+
+  #menu a {
+    font-size: 2rem;
+  }
+
 
   #banner h1 {
     margin-top: 3rem;
     font-size: 4.6rem;
+  }
+
+  .project {
+    width: 50%;
   }
 }
